@@ -1,0 +1,523 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'knex',
+1 verbose cli   'pg',
+1 verbose cli   'express',
+1 verbose cli   'morgan',
+1 verbose cli   'body-parser',
+1 verbose cli   'locus',
+1 verbose cli   'dotenvpug',
+1 verbose cli   'cookie-session',
+1 verbose cli   'bcrypt' ]
+2 info using npm@3.8.6
+3 info using node@v6.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData knex
+8 silly fetchPackageMetaData pg
+9 silly fetchPackageMetaData express
+10 silly fetchPackageMetaData morgan
+11 silly fetchPackageMetaData body-parser
+12 silly fetchPackageMetaData locus
+13 silly fetchPackageMetaData dotenvpug
+14 silly fetchPackageMetaData cookie-session
+15 silly fetchPackageMetaData bcrypt
+16 silly fetchNamedPackageData knex
+17 silly mapToRegistry name knex
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'knex',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'knex',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/knex
+22 silly fetchNamedPackageData pg
+23 silly mapToRegistry name pg
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'pg',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'pg',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/pg
+28 silly fetchNamedPackageData express
+29 silly mapToRegistry name express
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'express',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'express',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/express
+34 silly fetchNamedPackageData morgan
+35 silly mapToRegistry name morgan
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'morgan',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'morgan',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/morgan
+40 silly fetchNamedPackageData body-parser
+41 silly mapToRegistry name body-parser
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry data Result {
+44 silly mapToRegistry   raw: 'body-parser',
+44 silly mapToRegistry   scope: null,
+44 silly mapToRegistry   name: 'body-parser',
+44 silly mapToRegistry   rawSpec: '',
+44 silly mapToRegistry   spec: 'latest',
+44 silly mapToRegistry   type: 'tag' }
+45 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+46 silly fetchNamedPackageData locus
+47 silly mapToRegistry name locus
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'locus',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   name: 'locus',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/locus
+52 silly fetchNamedPackageData dotenvpug
+53 silly mapToRegistry name dotenvpug
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'dotenvpug',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   name: 'dotenvpug',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/dotenvpug
+58 silly fetchNamedPackageData cookie-session
+59 silly mapToRegistry name cookie-session
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry data Result {
+62 silly mapToRegistry   raw: 'cookie-session',
+62 silly mapToRegistry   scope: null,
+62 silly mapToRegistry   name: 'cookie-session',
+62 silly mapToRegistry   rawSpec: '',
+62 silly mapToRegistry   spec: 'latest',
+62 silly mapToRegistry   type: 'tag' }
+63 silly mapToRegistry uri https://registry.npmjs.org/cookie-session
+64 silly fetchNamedPackageData bcrypt
+65 silly mapToRegistry name bcrypt
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry data Result {
+68 silly mapToRegistry   raw: 'bcrypt',
+68 silly mapToRegistry   scope: null,
+68 silly mapToRegistry   name: 'bcrypt',
+68 silly mapToRegistry   rawSpec: '',
+68 silly mapToRegistry   spec: 'latest',
+68 silly mapToRegistry   type: 'tag' }
+69 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+70 verbose request uri https://registry.npmjs.org/dotenvpug
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 4:04:22 PM
+73 verbose request id d5579238bcbaa22d
+74 http request GET https://registry.npmjs.org/dotenvpug
+75 verbose request uri https://registry.npmjs.org/morgan
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 4:04:23 PM
+78 verbose etag "XNYY3QA6L6BPOYN70M8B32WF"
+79 http request GET https://registry.npmjs.org/morgan
+80 verbose request uri https://registry.npmjs.org/pg
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 4:04:23 PM
+83 verbose etag "E99WTBSIANFUG1IBNJE0U6YS5"
+84 http request GET https://registry.npmjs.org/pg
+85 verbose request uri https://registry.npmjs.org/body-parser
+86 verbose request no auth needed
+87 info attempt registry request try #1 at 4:04:23 PM
+88 verbose etag "VEG830551ZUFM7TK80R8GNDD"
+89 http request GET https://registry.npmjs.org/body-parser
+90 verbose request uri https://registry.npmjs.org/locus
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 4:04:23 PM
+93 verbose etag "4S1LXMOYJGTNPE3TU8RCT6FTH"
+94 http request GET https://registry.npmjs.org/locus
+95 verbose request uri https://registry.npmjs.org/express
+96 verbose request no auth needed
+97 info attempt registry request try #1 at 4:04:23 PM
+98 verbose etag "8MWFHAIJYPL5Y8H477R6GNFM0"
+99 http request GET https://registry.npmjs.org/express
+100 verbose request uri https://registry.npmjs.org/cookie-session
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 4:04:23 PM
+103 verbose etag "61VL2SDH9R81VNJ7MDEXC67A9"
+104 http request GET https://registry.npmjs.org/cookie-session
+105 verbose request uri https://registry.npmjs.org/bcrypt
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 4:04:23 PM
+108 verbose etag "ZJ1BPL0IJQ0TUOT8ZTOY41AK"
+109 http request GET https://registry.npmjs.org/bcrypt
+110 verbose request uri https://registry.npmjs.org/knex
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 4:04:23 PM
+113 verbose etag "D280MPRAKMJNW8Q5FG5BN22CN"
+114 http request GET https://registry.npmjs.org/knex
+115 http 304 https://registry.npmjs.org/knex
+116 verbose headers { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+116 verbose headers   via: '1.1 varnish',
+116 verbose headers   'cache-control': 'max-age=300',
+116 verbose headers   etag: '"D280MPRAKMJNW8Q5FG5BN22CN"',
+116 verbose headers   age: '277',
+116 verbose headers   connection: 'keep-alive',
+116 verbose headers   'x-served-by': 'cache-lax1434-LAX',
+116 verbose headers   'x-cache': 'HIT',
+116 verbose headers   'x-cache-hits': '1',
+116 verbose headers   'x-timer': 'S1465599863.220039,VS0,VE0',
+116 verbose headers   vary: 'Accept-Encoding' }
+117 silly get cb [ 304,
+117 silly get   { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     'cache-control': 'max-age=300',
+117 silly get     etag: '"D280MPRAKMJNW8Q5FG5BN22CN"',
+117 silly get     age: '277',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-lax1434-LAX',
+117 silly get     'x-cache': 'HIT',
+117 silly get     'x-cache-hits': '1',
+117 silly get     'x-timer': 'S1465599863.220039,VS0,VE0',
+117 silly get     vary: 'Accept-Encoding' } ]
+118 verbose etag https://registry.npmjs.org/knex from cache
+119 verbose get saving knex to /Users/uthrakartik/.npm/registry.npmjs.org/knex/.cache.json
+120 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+121 http 304 https://registry.npmjs.org/morgan
+122 verbose headers { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+122 verbose headers   via: '1.1 varnish',
+122 verbose headers   'cache-control': 'max-age=300',
+122 verbose headers   etag: '"XNYY3QA6L6BPOYN70M8B32WF"',
+122 verbose headers   age: '91',
+122 verbose headers   connection: 'keep-alive',
+122 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+122 verbose headers   'x-cache': 'HIT',
+122 verbose headers   'x-cache-hits': '5',
+122 verbose headers   'x-timer': 'S1465599863.225084,VS0,VE0',
+122 verbose headers   vary: 'Accept-Encoding' }
+123 silly get cb [ 304,
+123 silly get   { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+123 silly get     via: '1.1 varnish',
+123 silly get     'cache-control': 'max-age=300',
+123 silly get     etag: '"XNYY3QA6L6BPOYN70M8B32WF"',
+123 silly get     age: '91',
+123 silly get     connection: 'keep-alive',
+123 silly get     'x-served-by': 'cache-lax1440-LAX',
+123 silly get     'x-cache': 'HIT',
+123 silly get     'x-cache-hits': '5',
+123 silly get     'x-timer': 'S1465599863.225084,VS0,VE0',
+123 silly get     vary: 'Accept-Encoding' } ]
+124 verbose etag https://registry.npmjs.org/morgan from cache
+125 verbose get saving morgan to /Users/uthrakartik/.npm/registry.npmjs.org/morgan/.cache.json
+126 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir already in flight; waiting
+127 http 404 https://registry.npmjs.org/dotenvpug
+128 verbose headers { 'content-type': 'application/json',
+128 verbose headers   'cache-control': 'max-age=0',
+128 verbose headers   'content-length': '2',
+128 verbose headers   'accept-ranges': 'bytes',
+128 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+128 verbose headers   via: '1.1 varnish',
+128 verbose headers   age: '0',
+128 verbose headers   connection: 'keep-alive',
+128 verbose headers   'x-served-by': 'cache-lax1441-LAX',
+128 verbose headers   'x-cache': 'MISS',
+128 verbose headers   'x-cache-hits': '0',
+128 verbose headers   'x-timer': 'S1465599863.149511,VS0,VE85',
+128 verbose headers   vary: 'Accept-Encoding' }
+129 silly get cb [ 404,
+129 silly get   { 'content-type': 'application/json',
+129 silly get     'cache-control': 'max-age=0',
+129 silly get     'content-length': '2',
+129 silly get     'accept-ranges': 'bytes',
+129 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+129 silly get     via: '1.1 varnish',
+129 silly get     age: '0',
+129 silly get     connection: 'keep-alive',
+129 silly get     'x-served-by': 'cache-lax1441-LAX',
+129 silly get     'x-cache': 'MISS',
+129 silly get     'x-cache-hits': '0',
+129 silly get     'x-timer': 'S1465599863.149511,VS0,VE85',
+129 silly get     vary: 'Accept-Encoding' } ]
+130 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/dotenvpug
+130 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+130 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+130 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+130 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+130 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+130 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+130 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+130 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+130 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+130 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+130 silly fetchPackageMetaData  error for dotenvpug { Error: Registry returned 404 for GET on https://registry.npmjs.org/dotenvpug
+130 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+130 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+130 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+130 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+130 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+130 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+130 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+130 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+130 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+130 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12) pkgid: 'dotenvpug', statusCode: 404, code: 'E404' }
+131 http 200 https://registry.npmjs.org/cookie-session
+132 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+132 verbose headers   etag: '"7U3JM4XSPE5QDKXXB9TEWJHR5"',
+132 verbose headers   'content-type': 'application/json',
+132 verbose headers   'content-encoding': 'gzip',
+132 verbose headers   'cache-control': 'max-age=300',
+132 verbose headers   'content-length': '4870',
+132 verbose headers   'accept-ranges': 'bytes',
+132 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   age: '16',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-lax1430-LAX',
+132 verbose headers   'x-cache': 'HIT',
+132 verbose headers   'x-cache-hits': '1',
+132 verbose headers   'x-timer': 'S1465599863.211360,VS0,VE0',
+132 verbose headers   vary: 'Accept-Encoding' }
+133 silly get cb [ 200,
+133 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+133 silly get     etag: '"7U3JM4XSPE5QDKXXB9TEWJHR5"',
+133 silly get     'content-type': 'application/json',
+133 silly get     'content-encoding': 'gzip',
+133 silly get     'cache-control': 'max-age=300',
+133 silly get     'content-length': '4870',
+133 silly get     'accept-ranges': 'bytes',
+133 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     age: '16',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-lax1430-LAX',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '1',
+133 silly get     'x-timer': 'S1465599863.211360,VS0,VE0',
+133 silly get     vary: 'Accept-Encoding' } ]
+134 verbose get saving cookie-session to /Users/uthrakartik/.npm/registry.npmjs.org/cookie-session/.cache.json
+135 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+136 http 200 https://registry.npmjs.org/bcrypt
+137 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+137 verbose headers   etag: '"CYQZ1XPTFTOX3LI8EG2HMB3PL"',
+137 verbose headers   'content-type': 'application/json',
+137 verbose headers   'content-encoding': 'gzip',
+137 verbose headers   'cache-control': 'max-age=300',
+137 verbose headers   'content-length': '11694',
+137 verbose headers   'accept-ranges': 'bytes',
+137 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+137 verbose headers   via: '1.1 varnish',
+137 verbose headers   age: '82',
+137 verbose headers   connection: 'keep-alive',
+137 verbose headers   'x-served-by': 'cache-lax1421-LAX',
+137 verbose headers   'x-cache': 'HIT',
+137 verbose headers   'x-cache-hits': '1',
+137 verbose headers   'x-timer': 'S1465599863.219969,VS0,VE0',
+137 verbose headers   vary: 'Accept-Encoding' }
+138 silly get cb [ 200,
+138 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+138 silly get     etag: '"CYQZ1XPTFTOX3LI8EG2HMB3PL"',
+138 silly get     'content-type': 'application/json',
+138 silly get     'content-encoding': 'gzip',
+138 silly get     'cache-control': 'max-age=300',
+138 silly get     'content-length': '11694',
+138 silly get     'accept-ranges': 'bytes',
+138 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+138 silly get     via: '1.1 varnish',
+138 silly get     age: '82',
+138 silly get     connection: 'keep-alive',
+138 silly get     'x-served-by': 'cache-lax1421-LAX',
+138 silly get     'x-cache': 'HIT',
+138 silly get     'x-cache-hits': '1',
+138 silly get     'x-timer': 'S1465599863.219969,VS0,VE0',
+138 silly get     vary: 'Accept-Encoding' } ]
+139 verbose get saving bcrypt to /Users/uthrakartik/.npm/registry.npmjs.org/bcrypt/.cache.json
+140 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+141 http 304 https://registry.npmjs.org/locus
+142 verbose headers { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+142 verbose headers   via: '1.1 varnish',
+142 verbose headers   'cache-control': 'max-age=300',
+142 verbose headers   etag: '"4S1LXMOYJGTNPE3TU8RCT6FTH"',
+142 verbose headers   age: '0',
+142 verbose headers   connection: 'keep-alive',
+142 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+142 verbose headers   'x-cache': 'MISS',
+142 verbose headers   'x-cache-hits': '0',
+142 verbose headers   'x-timer': 'S1465599863.256047,VS0,VE55',
+142 verbose headers   vary: 'Accept-Encoding' }
+143 silly get cb [ 304,
+143 silly get   { date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     'cache-control': 'max-age=300',
+143 silly get     etag: '"4S1LXMOYJGTNPE3TU8RCT6FTH"',
+143 silly get     age: '0',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-lax1422-LAX',
+143 silly get     'x-cache': 'MISS',
+143 silly get     'x-cache-hits': '0',
+143 silly get     'x-timer': 'S1465599863.256047,VS0,VE55',
+143 silly get     vary: 'Accept-Encoding' } ]
+144 verbose etag https://registry.npmjs.org/locus from cache
+145 verbose get saving locus to /Users/uthrakartik/.npm/registry.npmjs.org/locus/.cache.json
+146 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+147 http 200 https://registry.npmjs.org/body-parser
+148 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+148 verbose headers   etag: '"84EEQKQ7Z2F2Z7HD4CCTEBO48"',
+148 verbose headers   'content-type': 'application/json',
+148 verbose headers   'content-encoding': 'gzip',
+148 verbose headers   'cache-control': 'max-age=300',
+148 verbose headers   'content-length': '15607',
+148 verbose headers   'accept-ranges': 'bytes',
+148 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+148 verbose headers   via: '1.1 varnish',
+148 verbose headers   age: '63',
+148 verbose headers   connection: 'keep-alive',
+148 verbose headers   'x-served-by': 'cache-lax1429-LAX',
+148 verbose headers   'x-cache': 'HIT',
+148 verbose headers   'x-cache-hits': '1',
+148 verbose headers   'x-timer': 'S1465599863.249099,VS0,VE0',
+148 verbose headers   vary: 'Accept-Encoding' }
+149 silly get cb [ 200,
+149 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+149 silly get     etag: '"84EEQKQ7Z2F2Z7HD4CCTEBO48"',
+149 silly get     'content-type': 'application/json',
+149 silly get     'content-encoding': 'gzip',
+149 silly get     'cache-control': 'max-age=300',
+149 silly get     'content-length': '15607',
+149 silly get     'accept-ranges': 'bytes',
+149 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+149 silly get     via: '1.1 varnish',
+149 silly get     age: '63',
+149 silly get     connection: 'keep-alive',
+149 silly get     'x-served-by': 'cache-lax1429-LAX',
+149 silly get     'x-cache': 'HIT',
+149 silly get     'x-cache-hits': '1',
+149 silly get     'x-timer': 'S1465599863.249099,VS0,VE0',
+149 silly get     vary: 'Accept-Encoding' } ]
+150 verbose get saving body-parser to /Users/uthrakartik/.npm/registry.npmjs.org/body-parser/.cache.json
+151 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+152 http 200 https://registry.npmjs.org/pg
+153 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+153 verbose headers   etag: '"E8WB998RWYCOPU23WUDSVB3UB"',
+153 verbose headers   'content-type': 'application/json',
+153 verbose headers   'content-encoding': 'gzip',
+153 verbose headers   'cache-control': 'max-age=300',
+153 verbose headers   'content-length': '18459',
+153 verbose headers   'accept-ranges': 'bytes',
+153 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+153 verbose headers   via: '1.1 varnish',
+153 verbose headers   age: '268',
+153 verbose headers   connection: 'keep-alive',
+153 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+153 verbose headers   'x-cache': 'HIT',
+153 verbose headers   'x-cache-hits': '2',
+153 verbose headers   'x-timer': 'S1465599863.225108,VS0,VE0',
+153 verbose headers   vary: 'Accept-Encoding' }
+154 silly get cb [ 200,
+154 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+154 silly get     etag: '"E8WB998RWYCOPU23WUDSVB3UB"',
+154 silly get     'content-type': 'application/json',
+154 silly get     'content-encoding': 'gzip',
+154 silly get     'cache-control': 'max-age=300',
+154 silly get     'content-length': '18459',
+154 silly get     'accept-ranges': 'bytes',
+154 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+154 silly get     via: '1.1 varnish',
+154 silly get     age: '268',
+154 silly get     connection: 'keep-alive',
+154 silly get     'x-served-by': 'cache-lax1440-LAX',
+154 silly get     'x-cache': 'HIT',
+154 silly get     'x-cache-hits': '2',
+154 silly get     'x-timer': 'S1465599863.225108,VS0,VE0',
+154 silly get     vary: 'Accept-Encoding' } ]
+155 verbose get saving pg to /Users/uthrakartik/.npm/registry.npmjs.org/pg/.cache.json
+156 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+157 http 200 https://registry.npmjs.org/express
+158 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+158 verbose headers   etag: '"6D8BA07VXQUUJFB65JQM6A94F"',
+158 verbose headers   'content-type': 'application/json',
+158 verbose headers   'content-encoding': 'gzip',
+158 verbose headers   'cache-control': 'max-age=300',
+158 verbose headers   'content-length': '54758',
+158 verbose headers   'accept-ranges': 'bytes',
+158 verbose headers   date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+158 verbose headers   via: '1.1 varnish',
+158 verbose headers   age: '88',
+158 verbose headers   connection: 'keep-alive',
+158 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+158 verbose headers   'x-cache': 'HIT',
+158 verbose headers   'x-cache-hits': '4',
+158 verbose headers   'x-timer': 'S1465599863.248757,VS0,VE0',
+158 verbose headers   vary: 'Accept-Encoding' }
+159 silly get cb [ 200,
+159 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+159 silly get     etag: '"6D8BA07VXQUUJFB65JQM6A94F"',
+159 silly get     'content-type': 'application/json',
+159 silly get     'content-encoding': 'gzip',
+159 silly get     'cache-control': 'max-age=300',
+159 silly get     'content-length': '54758',
+159 silly get     'accept-ranges': 'bytes',
+159 silly get     date: 'Fri, 10 Jun 2016 23:04:23 GMT',
+159 silly get     via: '1.1 varnish',
+159 silly get     age: '88',
+159 silly get     connection: 'keep-alive',
+159 silly get     'x-served-by': 'cache-lax1420-LAX',
+159 silly get     'x-cache': 'HIT',
+159 silly get     'x-cache-hits': '4',
+159 silly get     'x-timer': 'S1465599863.248757,VS0,VE0',
+159 silly get     vary: 'Accept-Encoding' } ]
+160 verbose get saving express to /Users/uthrakartik/.npm/registry.npmjs.org/express/.cache.json
+161 verbose correctMkdir /Users/uthrakartik/.npm correctMkdir not in flight; initializing
+162 silly rollbackFailedOptional Starting
+163 silly rollbackFailedOptional Finishing
+164 silly runTopLevelLifecycles Starting
+165 silly runTopLevelLifecycles Finishing
+166 silly install printInstalled
+167 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/dotenvpug
+167 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+167 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+167 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+167 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+167 verbose stack     at emitTwo (events.js:106:13)
+167 verbose stack     at Request.emit (events.js:191:7)
+167 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+167 verbose stack     at emitOne (events.js:101:20)
+167 verbose stack     at Request.emit (events.js:188:7)
+167 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+168 verbose statusCode 404
+169 verbose pkgid dotenvpug
+170 verbose cwd /Users/uthrakartik/Galvanize/projects/tablefull_app/client
+171 error Darwin 15.5.0
+172 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "knex" "pg" "express" "morgan" "body-parser" "locus" "dotenvpug" "cookie-session" "bcrypt"
+173 error node v6.1.0
+174 error npm  v3.8.6
+175 error code E404
+176 error 404 Registry returned 404 for GET on https://registry.npmjs.org/dotenvpug
+177 error 404
+178 error 404 'dotenvpug' is not in the npm registry.
+179 error 404 You should bug the author to publish it (or use the name yourself!)
+180 error 404 Note that you can also install from a
+181 error 404 tarball, folder, http url, or git url.
+182 verbose exit [ 1, true ]
