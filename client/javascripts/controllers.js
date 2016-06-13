@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('tableFull')
+    .module('tableful')
     .controller('LoginCtrl', loginController)
 
   function loginController(LoginService){

@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('tableFull')
+    .module('tableful')
     .service('LoginService', LoginService)
 
   function LoginService($scope, $auth){
