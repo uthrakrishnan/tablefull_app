@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/uthrakrishnan/tablefull_app/issues"
   },
-  "homepage": "https://github.com/uthrakrishnan/tablefull_app#readme"
+  "homepage": "https://github.com/uthrakrishnan/tablefull_app#readme",
+  "dependencies": {
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1"
+  }
 }
