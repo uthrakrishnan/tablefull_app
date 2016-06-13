@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('tableFull', ['ngRoute'])
+    .module('tableful', ['ngRoute'])
     .config(function($authProvider){
       $authProvider.httpInterceptor = function() { return true; },
       $authProvider.withCredentials = true;

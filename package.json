@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/uthrakrishnan/tablefull_app#readme",
   "dependencies": {
+    "jwt-simple": "^0.5.0",
+    "knex": "^0.11.5",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
+    "pg": "^5.1.0",
     "satellizer": "^0.14.1"
   }
 }
