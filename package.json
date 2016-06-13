@@ -18,6 +18,7 @@
   "homepage": "https://github.com/uthrakrishnan/tablefull_app#readme",
   "dependencies": {
     "passport": "^0.3.2",
-    "passport-facebook": "^2.1.1"
+    "passport-facebook": "^2.1.1",
+    "satellizer": "^0.14.1"
   }
 }
