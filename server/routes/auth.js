@@ -104,4 +104,4 @@ router.post('/auth/signup', function(req, res) {
 });
 
 
-
+module.exports = router;

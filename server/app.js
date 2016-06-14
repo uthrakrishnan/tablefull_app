@@ -12,9 +12,9 @@ if(process.env.NODE_ENV !== 'production'){
 
 app.use('/javascripts', express.static(__dirname + "/../client/javascripts"));
 app.use('/stylesheets', express.static(__dirname + "/..client/stylesheets"));
-app.use('/reservations', express.static(__dirname + "/../client/reservations"));
-app.use('/users', express.static(__dirname + "/../client/users"));
-app.use('/venues', express.static(__dirname + "/../client/venues"));
+app.use('/reservations', express.static(__dirname + "/../client/views/reservations"));
+app.use('/users', express.static(__dirname + "/../client/views/users"));
+app.use('/venues', express.static(__dirname + "/../client/views/venues"));
 
 
 
@@ -25,17 +25,13 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use('/venues', router.venues);
 app.use('/users', router.users);
 app.use('/auth', router.auth);
-app.use('/venues/:venue_id/tables', routes.tables);
-app.use('/venues/:venue_id/tables/:table_id/reservations', routes.reservations);
+app.use('/venues/:venue_id/tables', router.tables);
+app.use('/venues/:venue_id/tables/:table_id/reservations', router.reservations);
 
-
-app.get('/', (req, res)=>{
-  res.sendFile('layout.html', {root: './client'})
-})
 
 
 app.get('*', (req, res)=>{
-  res.sendFile('error.html', {root: './client'})
+  res.render(__dirname+ '/../client/layout.jade')
 })
 
 
