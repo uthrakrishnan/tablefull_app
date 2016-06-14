@@ -5,15 +5,18 @@ const express = require('express'),
 
 
 router.route('/')
-      .post((req,res)=>{
-         knex('users').insert(req.body.user).returning('*').then((user)=>{
-          res.send(user);
-         }).catch((err)=>{
-          res.send(err);
-         }) 
+
+      .patch((req,res)=>{
+        var user = req.body.user;
+        knex('users').where('fb_id', user.fb_id).update({alias: user.alias, dob: user.dob, profile_pic: user.profile_pic, blurb: user.blurb}).then(()=>{
+          // req.flash('newUser', 'Added New User!');
+          res.redirect(req.session.returnTo || '/venues');
+          delete req.session.returnTo;
+        }); 
       })
+     
 
 
-router.route('/new', (req, res)=>{
-  res.sendFile('/users/new')
-})
+
+
+module.exports = router;

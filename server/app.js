@@ -22,14 +22,19 @@ app.use(morgan('tiny'));
 app.use(bodyParser.json({type: "application/json"}));
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.use('/api/venues', router.venues);
-app.use('/api/users', router.users);
+app.use('/venues', router.venues);
+app.use('/users', router.users);
 app.use('/auth', router.auth);
-app.use('/api/venues/:venue_id/tables', routes.tables);
-app.use('/api/venues/:venue_id/tables/:table_id/reservations', routes.reservations);
+app.use('/venues/:venue_id/tables', routes.tables);
+app.use('/venues/:venue_id/tables/:table_id/reservations', routes.reservations);
 
 
-app.get('*', function(req, res){
+app.get('/', (req, res)=>{
+  res.sendFile('layout.html', {root: './client'})
+})
+
+
+app.get('*', (req, res)=>{
   res.sendFile('error.html', {root: './client'})
 })
 

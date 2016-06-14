@@ -2,18 +2,20 @@ const express = require('express'),
       router = express.Router({mergeParams: true}),
       knex = require('../db/knex'),
       bcryp = require('bcrypt'),
-      helpers = require('../helpers/authHelpers');
+      helpers = require('../helpers/authHelpers'),
+      request = require('request');
+
+
 
   
 router.post('/auth/facebook', function(req, res) {
-  var fields = ['id', 'email', 'first_name', 'last_name', 'link', 'name'];
+  var fields = ['email', 'public_profile'];
   var accessTokenUrl = 'https://graph.facebook.com/v2.5/oauth/access_token';
   var graphApiUrl = 'https://graph.facebook.com/v2.5/me?fields=' + fields.join(',');
   var params = {
-    code: req.body.code,
-    client_id: req.body.clientId,
-    client_secret: config.FACEBOOK_SECRET,
-    redirect_uri: req.body.redirectUri
+    client_id: process.env.FACEBOOK_KEY,
+    client_secret: process.env.FACEBOOK_SECRET,
+    redirect_uri: 'http://localhost:3000/auth/facebook/callback'
   };
 
   // Step 1. Exchange authorization code for access token.
@@ -39,7 +41,6 @@ router.post('/auth/facebook', function(req, res) {
               return res.status(400).send({ message: 'User not found' });
             }
             user.facebook = profile.id;
-            user.picture = user.picture || 'https://graph.facebook.com/v2.3/' + profile.id + '/picture?type=large';
             user.displayName = user.displayName || profile.name;
             user.save(function() {
               var token = createJWT(user);
