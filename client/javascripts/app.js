@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('tableful', ['ngRoute'])
+    .module('tableful', ['ngRoute', 'satellizer'])
     .config(function($authProvider){
       $authProvider.httpInterceptor = function() { return true; },
       $authProvider.withCredentials = true;
@@ -15,7 +15,7 @@
       $authProvider.authToken = 'Bearer';
       $authProvider.storageType = 'localStorage';
       $authProvider.facebook({
-        clientId: 'FACEBOOK APP ID',
+        clientId: process.env.FACEBOOK_KEY,
         responseType: 'token',
         name: 'facebook',
         url: '/auth/facebook',
