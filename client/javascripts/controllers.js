@@ -1,11 +1,13 @@
 (function(){
   angular
     .module('tableful')
-    .controller('LoginCtrl', loginController)
+    .controller('LoginCtrl', loginController);
 
-  function loginController(LoginService){
+  function loginController($scope, $auth){
+     $scope.authenticate = function(facebook){
+      $auth.authenticate(facebook);
+     }
+  };
 
-  }
-
-  LoginController.$inject = ['LoginService']
-})
+  LoginController.$inject = ['$scope', '$auth']
+})();

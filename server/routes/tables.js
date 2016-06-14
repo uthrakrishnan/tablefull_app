@@ -4,3 +4,4 @@ const express = require('express'),
       helpers = require('../helpers/authHelpers');
 
 
+module.exports = router;

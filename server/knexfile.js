@@ -3,14 +3,14 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'tablefull_app'
+      database: 'tableful_app'
     }
   },
 
   production: {
     client: 'postgresql',
     connection: {
-      database: 'tablefull_app',
+      database: 'tableful_app',
     },
     pool: {
       min: 2,
