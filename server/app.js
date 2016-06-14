@@ -30,9 +30,13 @@ app.use('/venues/:venue_id/tables/:table_id/reservations', router.reservations);
 
 
 
+app.get('/', (req, res)=>{
+  res.render(__dirname+ '/../client/home.jade')
+});
+
 app.get('*', (req, res)=>{
-  res.render(__dirname+ '/../client/layout.jade')
-})
+  res.render(__dirname+ '/../client/error.jade')
+});
 
 
 app.listen('3000', function(){

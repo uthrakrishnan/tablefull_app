@@ -1,4 +1,6 @@
-const knex = require('../db/knex');
+const knex = require('../db/knex'),
+      SALT_WORK_FACTOR = 10,
+      bcrypt = require('bcrypt')
 
 module.exports = {
   ensureAuthenticated: (req, res, next)=> {
@@ -30,6 +32,7 @@ module.exports = {
       exp: moment().add(14, 'days').unix()
     };
     return jwt.encode(payload, config.TOKEN_SECRET);
-  }
+  },
+
 
 }
