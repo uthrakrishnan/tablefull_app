@@ -1,6 +1,6 @@
 const express = require('express'),
       router = express.Router({mergeParams: true}),
-      knex = require('../db/kenx'),
+      knex = require('../db/knex'),
       helpers = require('../helpers/authHelpers');
 
 

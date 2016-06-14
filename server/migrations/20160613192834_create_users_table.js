@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
     t.text('profile_pic');
     t.text('intro');
     t.text('fb_id');
+    t.text('email');
   })
 };
 

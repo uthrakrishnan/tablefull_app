@@ -29,7 +29,12 @@ app.use('/api/venues/:venue_id/tables', routes.tables);
 app.use('/api/venues/:venue_id/tables/:table_id/reservations', routes.reservations);
 
 
-app.get('*', function(req, res){
+app.get('/', (req, res)=>{
+  res.sendFile('layout.html', {root: './client'})
+})
+
+
+app.get('*', (req, res)=>{
   res.sendFile('error.html', {root: './client'})
 })
 

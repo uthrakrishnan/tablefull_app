@@ -1,6 +1,6 @@
 const knex = require('../db/knex');
 
-module.exports {
+module.exports = {
   ensureAuthenticated: (req, res, next)=> {
     if (!req.header('Authorization')) {
       return res.status(401).send({ message: 'Please make sure your request has an Authorization header' });
