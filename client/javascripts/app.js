@@ -22,7 +22,7 @@
         authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
         redirectUri: window.location.origin + '/',
         requiredUrlParams: ['display', 'scope'],
-        scope: ['email'],
+        scope: ['email','public_profile'],
         scopeDelimiter: ',',
         display: 'popup',
         type: '2.0',

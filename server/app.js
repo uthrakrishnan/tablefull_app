@@ -25,8 +25,10 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use('/venues', router.venues);
 app.use('/users', router.users);
 app.use('/auth', router.auth);
-app.use('/venues/:venue_id/tables', router.tables);
-app.use('/venues/:venue_id/tables/:table_id/reservations', router.reservations);
+app.use('/manage/venue', router.manage);
+app.use('/manage/venue/:venue_id/events', router.events);
+app.use('/manage/venue/:venue_id/tables', router.tables);
+app.use('/manage/venue/:venue_id/calendar', router.calendar);
 
 
 

@@ -8,6 +8,7 @@ exports.up = function(knex, Promise) {
     t.text('intro');
     t.text('fb_id');
     t.text('email');
+    t.integer('zipcode')
   })
 };
 

@@ -3,8 +3,5 @@ const express = require('express'),
       knex = require('../db/knex'),
       helpers = require('../helpers/authHelpers');
 
-    
-
-
 
 module.exports = router;
