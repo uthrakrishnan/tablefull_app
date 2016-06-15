@@ -5,7 +5,4 @@ const express = require('express'),
 
     
 
-//GET Calendar/:calendar_date
-
-
 module.exports = router;

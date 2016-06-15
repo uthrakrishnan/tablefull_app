@@ -5,5 +5,6 @@ const users = require('./users'),
       tables = require('./tables'),
       manage= require('./manage'),
       events = require('./events');
+      reservations = require('./reservations')
 
-module.exports = {users, manage, venues, calendar, tables, auth, events}
+module.exports = {users, reservations, manage, venues, calendar, tables, auth, events}

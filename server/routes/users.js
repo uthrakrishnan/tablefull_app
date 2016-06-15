@@ -4,17 +4,32 @@ const express = require('express'),
       helpers = require('../helpers/authHelpers');
 
 
-router.route('/')
 
-      .patch((req,res)=>{
-        var user = req.body.user;
-        knex('users').where('fb_id', user.fb_id).update({alias: user.alias, dob: user.dob, profile_pic: user.profile_pic, blurb: user.blurb}).then(()=>{
-          // req.flash('newUser', 'Added New User!');
-          res.redirect(req.session.returnTo || '/venues');
-          delete req.session.returnTo;
-        }); 
+
+router.route('/:user_id')
+      //get user profile
+      .get((req, res)=>{
+        knex('users').where('id', req.params.user_id).then((user)=>{
+          res.send(user)
+        })
       })
-     
+      //update user profile
+      .patch((req,res)=>{
+        knex('users').where('fb_id', user.fb_id).update(req.body.user).returning('*').then((user)=>{
+          res.send(user);
+        }).catch((err)=>{
+          res.send(err);
+        })
+      })
+      //delete user profile
+      .delete((req, res)=>{
+        knex('users').where('id', req.params.user_id).first().del().then((status)=>{
+          res.send('deleted')
+        }).catch((err)=>{
+          res.send(err)
+        })
+      })
+
 
 
 

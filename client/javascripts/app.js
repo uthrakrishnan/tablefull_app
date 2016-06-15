@@ -77,6 +77,6 @@
         controller: 'EditCalendarCtrl',
         controllerAs: 'editCalendarC'
       })
-      .when('')
+      .when()
   })
 })

@@ -3,7 +3,15 @@ const express = require('express'),
       knex = require('../db/knex'),
       helpers = require('../helpers/authHelpers');
 
-    
+
+
+// GET
+
+// PUT
+
+// DELETE
+
+// GET/:id
 
 
 
