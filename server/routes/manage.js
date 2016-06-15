@@ -4,4 +4,7 @@ const express = require('express'),
       helpers = require('../helpers/authHelpers');
 
 
+router.route('/:id')
+
+
 module.exports = router;
