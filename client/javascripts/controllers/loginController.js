@@ -11,3 +11,4 @@
 
   LoginController.$inject = ['$scope', '$auth']
 })();
+

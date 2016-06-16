@@ -7,12 +7,12 @@ const express = require('express'),
 require('dotenv').load();
 
 
-
-app.use('/javascripts', express.static(__dirname + "/../client/javascripts"));
-app.use('/stylesheets', express.static(__dirname + "/..client/stylesheets"));
-app.use('/reservations', express.static(__dirname + "/../client/views/reservations"));
-app.use('/users', express.static(__dirname + "/../client/views/users"));
-app.use('/venues', express.static(__dirname + "/../client/views/venues"));
+app.use('/assets', express.static(__dirname + "/../client/"));
+// app.use('/javascripts', express.static(__dirname + "/../client/javascripts"));
+// app.use('/stylesheets', express.static(__dirname + "/../client/stylesheets"));
+// app.use('/reservations', express.static(__dirname + "/../client/views/reservations"));
+// app.use('/users', express.static(__dirname + "/../client/views/users"));
+// app.use('/venues', express.static(__dirname + "/../client/views/venues"));
 
 
 
