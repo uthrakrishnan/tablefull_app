@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TableFul</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <script src="./stylesheets/ui-boostrap.js"></script>
+  <script src="bower_components/satellizer/satellizer.js"></script>
+  <script src="./javascripts/app.js"></script>
+  <script src="./javascripts/components.js"></script>
+  <script src="./javascripts/controllers.js"></script>
+  <script src="./javascripts/services.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+  <link href="/stylesheets/style.css"/>
+</head>
+<body>
+  //Navbar
+  <nav id="siteNavBar" class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><br/><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="navbarBrand" href="/" class="navbar-brand">LonelyTable</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div id="navCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav notLayout">
+            <li><a href="/venues">Venues </a></li>
+            <li><a href="/getstarted">Get Started</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact  </a></li>
+            <button id="fb_icon" class="btn btn-facebook"><a href="/auth/facebook">Sign in with Facebook</a></button>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse-->
+      </div>
+      <!-- /.container-fluid-->
+    </nav>
+  </body>
+  <div id="notLayout" class="container-fluid">
+  </div>
+
+</body>
+</html>

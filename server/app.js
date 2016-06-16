@@ -4,10 +4,8 @@ const express = require('express'),
       bodyParser= require('body-parser'),
       router = require('./routes');
 
+require('dotenv').load();
 
-if(process.env.NODE_ENV !== 'production'){
-  require('dotenv').load();
-}
 
 
 app.use('/javascripts', express.static(__dirname + "/../client/javascripts"));
@@ -34,11 +32,11 @@ app.use('/manage/venue/:venue_id/calendar', router.calendar);
 
 
 app.get('/', (req, res)=>{
-  res.render(__dirname+ '/../client/home.jade')
+  res.sendFile('layout.html', {root: './client'})
 });
 
 app.get('*', (req, res)=>{
-  res.render(__dirname+ '/../client/error.jade')
+  res.sendFile('error.html', {root: './client/views'})
 });
 
 

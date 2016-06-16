@@ -5,13 +5,42 @@ const express = require('express'),
 
 
 
-// GET
+router.route('/')
+      .get((req, res)=>{
+        knex('venues').then((venues)=>{
+          res.send(venues);
+        }).catch((err)=>{
+          res.send(err);
+        })
+      });
 
-// PUT
+router.route('/:venue_id')
+      .get((req, res)=>{
+        knex('venues').where('id', req.params.venue_id).then((venue)=>{
+          res.send(venue);
+        }).catch((err)=>{
+          res.send(err);
+        })
+      })
 
-// DELETE
+router.route('/:venue_id/calendar')
+      .get((req, res)=>{
+        knex('calendar').where('venue_id', req.params.venue_id).then((calendar)=>{
+          res.send(calendar);
+        }).catch((err)=>{
+          res.send(err);
+        })
+      });
 
-// GET/:id
+router.route('/:venue_id/calendar/:date')
+      .get((req, res)=>{
+        knex('calendar').where({'venue_id': req.params.venue_id, 'date' : req.params.date, 'status' : open}).rightOuterJoin('tables', 'table_id', 'id').then((tables)=>{
+          res.send(tables);
+        }).catch((err)=>{
+          res.send(err);
+        })
+      });
+
 
 
 

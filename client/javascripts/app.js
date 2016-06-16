@@ -32,21 +32,28 @@
     });
 
     $routePorvider
-      .when('/users', {
-        templateUrl: '../',
-        controller: 'UsersCtrl',
-        controllerAs: 'usersC'
-      })
+      //USERS VIEWS
       .when('/users/new', {
         templateUrl: 'New User Form',
         controller: 'NewUsersCtrl',
         controllerAs: 'newUserC'
       })
-      .when('/users/:id/edit', {
+      .when('/users/:user_id/myProfile',{
+        templateUrl: 'User Profile Page',
+        controller: 'UserProfileCtrl',
+        controllerAs: 'profileC'
+      })
+      .when('/users/:user_id/edit', {
         templateUrl: 'Edit User Form',
         controller: 'EditUsersCtrl',
         controllerAs: 'editUserC'        
       })
+      .when('/users/:user_id/my_reservations',{
+        templateUrl: 'myRes Table',
+        controller: 'MyResCtrl',
+        controllerAs: 'myResC'
+      })
+      //Manage VIEWS
       .when('/manage/venue/:venue_id',{
         templateUrl: 'Venue Profile Page',
         controller: 'VenueCtrl',
@@ -72,11 +79,46 @@
         controller: 'EditEventCtrl',
         controllerAs: 'editEventC'
       })
-      .when('manage/venue/:venue_id/calendar/:calendar_date',{
+      .when('manage/venue/:venue_id/calendar',{
+        templateUrl: '',
+        controller: '',
+        controllerAs: ''
+      })
+      .when('manage/venue/:venue_id/calendar/:date',{
         templateUrl: '',
         controller: 'EditCalendarCtrl',
         controllerAs: 'editCalendarC'
       })
-      .when()
-  })
+      //VENUE VIEWS
+      .when('/venues',{
+        templateUrl:'Venues Index Page',
+        controller: 'VenuesCtrl',
+        controllerAs: 'VenuesC'
+      })
+      .when('/venues/:venue_id', {
+        templateUrl: 'Venue Description Page',
+        controller:'GetVenueCtrl'
+      })
+      .when('/venues/:venue_id/calendar', {
+        templateUrl: '',
+        controller: '',
+        controllerAs: ''
+      })
+      .when('/venues/venue_id/calendar/:date', {
+        templateUrl: '',
+        controller: '',
+        controllerAs: ''
+      })
+      //RESERVATIONS VIEWS
+      .when('/reservations', {
+        templateUrl: '',
+        controller: '',
+        controllerAs: ''
+      })
+      .when('/reservations/calendar', {
+        templateUrl: '',
+        controller: '',
+        controllerAs: ''
+      });
+  }
 })
