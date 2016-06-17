@@ -35,9 +35,9 @@ app.get('/', (req, res)=>{
   res.sendFile('layout.html', {root: './client'})
 });
 
-app.get('*', (req, res)=>{
-  res.sendFile('error.html', {root: './client/views'})
-});
+// app.get('*', (req, res)=>{
+//   res.sendFile('error.html', {root: './client'})
+// });
 
 
 app.listen('3000', function(){

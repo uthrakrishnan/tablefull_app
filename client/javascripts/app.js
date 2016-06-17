@@ -1,7 +1,8 @@
 (function(){
   angular
-    .module('tableful', ['ngRoute', 'satellizer'])
+    .module('tableful', ['ngRoute', 'satellizer', 'ui-bootstrap'])
     .config(config)
+
 
   function config($authProvider, $routeProvider, $locationProvider){
     $authProvider.httpInterceptor = function() { return true; },
@@ -34,9 +35,7 @@
     $routeProvider
       //USERS VIEWS
       .when('/', {
-        templateUrl: '../views/home.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'home'
+        templateUrl: '../assets/views/home.html'
 
       // })
       // .when('/users/new', {
@@ -130,4 +129,4 @@
   }
   config.$inject = ['$authProvider', '$routeProvider', '$locationProvider']
 
-})
+})();
