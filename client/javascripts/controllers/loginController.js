@@ -1,9 +1,9 @@
 (function(){
   angular
     .module('tableful')
-    .controller('LoginCtrl', loginController);
+    .controller('LoginController', LoginController);
 
-  function loginController($scope, $auth){
+  function LoginController($scope, $auth){
      $scope.authenticate = function(facebook){
       $auth.authenticate(facebook);
      }
