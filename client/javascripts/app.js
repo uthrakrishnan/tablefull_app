@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('tableful', ['ngRoute', 'satellizer', 'ui-bootstrap'])
+    .module('tableful', ['ngRoute', 'satellizer', 'ui.bootstrap'])
     .config(config)
 
 
@@ -18,7 +18,7 @@
     $authProvider.authToken = 'Bearer';
     $authProvider.storageType = 'localStorage';
     $authProvider.facebook({
-      clientId: process.env.FACEBOOK_KEY,
+      clientId: '910806639065239',
       responseType: 'token',
       name: 'facebook',
       url: '/auth/facebook',

@@ -3,11 +3,11 @@
     .module('tableful')
     .service('LoginService', LoginService)
 
-  function LoginService($scope, $auth){
-    $scope.authenticate = function(facebook){
+  function LoginService($auth){
+    this.authenticate = function(facebook){
       $auth.authenticate(facebook);
     }
   }
 
-  LoginService.$inject = ['$scope', '$auth'];
+  LoginService.$inject = ['$auth'];
 })();

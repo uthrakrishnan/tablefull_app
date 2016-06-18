@@ -5,12 +5,7 @@
 
   NavbarController.$inject = ['$scope','LoginService']
 
-  function NavbarController($scope, LoginService){
+  function NavbarController(){
     const vm = this;
-    vm.facebookLogin = facebookLogin
-
-    function facebookLogin(LoginService){
-      return LoginService.authenticate();
-    }
   }
-})
+})();
