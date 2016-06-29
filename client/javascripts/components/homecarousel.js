@@ -2,11 +2,13 @@
   angular 
     .module('tableful')
     .component('tfCarousel', {
-      bindings: {},
-      controller: 'CarouselController',
+      bindings: {
+
+      },
+      controller: 'carouselController',
       controllerAs: 'carousel',
       templateUrl: '../assets/views/general/carousel.html',
       transclude:true,
       replace: true
     })
-})
+})();

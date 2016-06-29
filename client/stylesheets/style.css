@@ -1,12 +1,42 @@
+/*Layout Page*/
+
+
+/*NavBar*/
 #logo{
-  width: 50px;
-  height:50px;
+  width: 125px;
+  height:75px;
   margin-top: 0px;
 }
 
-img {
-  width:100%;
+#loginBtn{
+  margin-top: 13px;
 }
+
+.navbar {
+  height: 100px;
+  border: none;
+  border-radius: 0;
+  background-color: #98BFAE;
+}
+
+/*Carousel*/
+
+.carousel-caption h4{
+  font-size: 100px;
+  font-size: 8vmax;
+  line-height: 1.0;
+  font-weight: bold;
+  margin:0 auto;
+  margin-bottom: 20px;
+
+}
+
+
+
+/*img {
+  width:100%;
+}*/
+
 h1, h3, h6, h2 {
   text-align: center;
 }
@@ -14,7 +44,7 @@ h1, h3, h6, h2 {
 /*  LAYOUTS  */
 
 body {
-    background-color: #3f0587;
+    background-color: #382B5D;
     margin: 0 auto;
     color: #FFFFFF;
     max-width: 900px;
@@ -66,7 +96,7 @@ body {
   font-size: medium;
   text-align: center;
   margin-top: 25px;
-  color: #979696;
+  color: #98BFAE;
 }
 
 .col-md-6 {
@@ -84,11 +114,6 @@ body {
   color: #FFFFFF;
 }
 
-#navBar {
-  border: none;
-  border-radius: 0;
-  background-color: rgba(0,0,0,0.5);
-}
 
 #fb_icon {
   position: absolute;
@@ -123,16 +148,7 @@ body {
   color:#CCCCCC;
 }
 
-#carouselCaption {
-  font-size: 100px;
-  font-size: 8vmax;
-  line-height: 1.0;
-  font-weight: bold;
-  display:table-cell;
-  margin:0 auto;
-  margin-bottom: 20px;
-  text-align:center;
-}
+
 
 #yourAccount {
   color: #3b5998;
