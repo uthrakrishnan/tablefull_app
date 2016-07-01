@@ -34,6 +34,9 @@ app.use('/manage/venue/:venue_id/calendar', router.calendar);
 app.get('/', (req, res)=>{
   res.sendFile('layout.html', {root: './client'})
 });
+app.get('/manage', (req, res)=>{
+  res.sendFile('venueLayout.html', {root: './client'})
+})
 
 // app.get('*', (req, res)=>{
 //   res.sendFile('error.html', {root: './client'})

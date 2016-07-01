@@ -1,13 +1,11 @@
 (function(){
   angular
     .module('tableful')
-    .component('tfNavbar',{
-      bindings: {
-        
-      },
-      controller: 'NavbarController',
-      controllerAs: 'navbar',
+    .component('tfUserNavbar',{
+      bindings: {},
       templateUrl: '../assets/views/general/navbar.html',
+      controller: 'UserNavController',
+      controllerAs: 'usernav',
       transclude: true,
       replace: true,
     })

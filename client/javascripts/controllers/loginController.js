@@ -3,12 +3,16 @@
     .module('tableful')
     .controller('LoginController', LoginController);
 
-  function LoginController($auth){
-     this.authenticate = function(facebook){
-      $auth.authenticate(facebook);
-     }
+  function LoginController($auth, $location){
+    this.login= function(){
+      $auth.login(user)
+    }
+    this.authenticate = function(provider){
+      $auth.authenticate(provider);
+      
+    }
   };
 
-  LoginController.$inject = ['$auth']
+  LoginController.$inject = ['$auth', '$location']
 })();
 

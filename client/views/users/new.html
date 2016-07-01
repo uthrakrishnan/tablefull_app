@@ -1,0 +1,30 @@
+<h1>Please fill out your profile information</h1>
+
+<h5><strong>All fields are required</strong></h5>
+
+
+<div class="container">
+  <div class="row">
+    <div class="center-form panel">
+      <div class="panel-body">
+        <h2 class="text-center">Log in</h2>
+        <form method="post" ng-submit="" name="SignUpForm">
+          <div class="form-group has-feedback">
+            <input class="form-control input-lg" type="text" name="displayName" ng-model="user.displayName" placeholder="displayName" required autofocus>
+            <span class="ion-at form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input class="form-control input-lg" type="text" name="zipcode" ng-model="user.zipcode" placeholder="zipcode" required autofocus>
+            <span class="ion-at form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input class="form-control input-lg" type="text" name="intro" ng-model="user.intro" placeholder="A little about myself" required>
+            <span class="ion-key form-control-feedback"></span>
+          </div>
+          <button type="submit" ng-disabled="#" class="btn btn-lg  btn-block btn-success">Finish Profile</button>
+          <br/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

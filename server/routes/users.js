@@ -13,6 +13,9 @@ router.route('/:user_id')
           res.send(user)
         })
       })
+      .put((req, res)=>{
+        
+      })
       //update user profile
       .patch((req,res)=>{
         knex('users').where('fb_id', user.fb_id).update(req.body.user).returning('*').then((user)=>{

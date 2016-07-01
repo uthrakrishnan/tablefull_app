@@ -1,23 +1,32 @@
-/*Layout Page*/
+/*User-Layout Page*/
 
 
 /*NavBar*/
 #logo{
   width: 125px;
-  height:75px;
-  margin-top: 0px;
+  height:60px;
+  margin-top: -10px;
 }
 
 #loginBtn{
-  margin-top: 13px;
+  margin-top: 5px;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.navbar {
-  height: 100px;
-  border: none;
-  border-radius: 0;
-  background-color: #98BFAE;
+#siteNavBar {
+  height: 70px;
+  background:rgba(0,0,0,0.3);
+  border-color: transparent;
+  color: #FFFFFF;
 }
+
+.navbar-nav {
+  margin-top:10px;
+  font-size: 20px;
+}
+
+
 
 /*Carousel*/
 
@@ -28,9 +37,16 @@
   font-weight: bold;
   margin:0 auto;
   margin-bottom: 20px;
-
 }
 
+/*Footer*/
+#footer{
+  height: 70px;
+  width: 100%;
+  background:rgba(0,0,0,0.3);
+  border-color: transparent;
+  color: #FFFFFF;
+}
 
 
 /*img {
@@ -126,11 +142,6 @@ body {
   color: #FFFFFF
 }
 
-#siteNavBar {
-  background:rgba(0,0,0,0.3);
-  border-color: transparent;
-  color: #FFFFFF;
-}
 
 #selectVenueBtn {
   margin-bottom: 15px;

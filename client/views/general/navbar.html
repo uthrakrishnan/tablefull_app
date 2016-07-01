@@ -11,6 +11,7 @@
 <!--         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact  </a></li> -->
         <fb-login-btn></fb-login-btn>
+        <li ng-if='isAuthenticated()'>{{user.displayName}}</li>
       </ul>
     </div>
   <!-- /.navbar-collapse-->

@@ -2,6 +2,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('venues', table=>{
     table.increments(),
+    table.text('loginName'),
+    table.text('password'),
     table.text('name'),
     table.text('street_address'),
     table.text('city'),

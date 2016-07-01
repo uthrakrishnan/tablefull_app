@@ -1,5 +1,7 @@
 const knex = require('../db/knex'),
       SALT_WORK_FACTOR = 10,
+      jwt= require('jwt-simple'),
+      moment= require('moment')
       bcrypt = require('bcrypt')
 
 module.exports = {
@@ -11,7 +13,7 @@ module.exports = {
 
     var payload = null;
     try {
-      payload = jwt.decode(token, config.TOKEN_SECRET);
+      payload = jwt.decode(token, process.env.TOKEN_SECRET);
     }
     catch (err) {
       return res.status(401).send({ message: err.message });
@@ -25,13 +27,15 @@ module.exports = {
   },
 
 
+
+
   createJWT: (user)=> {
     var payload = {
-      sub: user._id,
+      sub: user.id,
       iat: moment().unix(),
       exp: moment().add(14, 'days').unix()
     };
-    return jwt.encode(payload, config.TOKEN_SECRET);
+    return jwt.encode(payload, process.env.TOKEN_SECRET);
   },
 
 
